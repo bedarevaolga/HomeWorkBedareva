@@ -1,17 +1,17 @@
 public class HomeWorkTwo {
-
     public static void main(String[] args) {
 
         int n = 7;
         int sum = 0;
-        int[] array = new int[n];
-        array[0] = 0;
-        array[1] = 1;
+        int first = 0;
+        int second = 1;
         for (int j = 2; j < n; j++) {
-            array[j] = array[j - 1] + array[j - 2];
-            if (array[j] % 2 == 0) {
-                sum += array[j];
+            int c = first + second;
+            if(c % 2 == 0) {
+                sum += c;
             }
+            first = second;
+            second = c;
         }
         System.out.println(sum);
     }

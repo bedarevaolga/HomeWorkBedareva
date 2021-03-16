@@ -5,10 +5,11 @@ public class HomeWorkOnee {
         int n = 11;
         int sum = 0;
 
-        for (int j = 0; j < array.length; j++)
+        for (int j = 0; j < array.length; j++) {
             if (array[j] != n) {
                 sum += array[j];
             }
+        }
         System.out.println(sum);
     }
 }

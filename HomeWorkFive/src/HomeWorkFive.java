@@ -1,8 +1,8 @@
 public class HomeWorkFive {
     public static void main(String[] args) {
         int[][] Array = {{1, 3, 5, 4, 6 }, {0, 2, 3, 9, 4}, {0, 0, 6, 5, 9}, {0, 0, 0, 7, 5}, {0, 0, 0, 0, 3}};
-        boolean z = true;
-        boolean k = true;
+        boolean z = true; // матрица нижняя треугольная
+        boolean k = true; // матрица квадратная
 
         for (int i = 0; i < Array.length; i++) {
             for (int j = 0; j < Array[i].length; j++) {
@@ -15,12 +15,12 @@ public class HomeWorkFive {
                 }
             }
         }
-        if (k ==false) {
+        if (!k) {
             System.out.println("Матрица не является квадратой");
         }
-        else if (z == true) {
+        else if (z) {
             System.out.println("Матрица является нижней треугольной");
-        } else if (z == false) {
+        } else if (!z) {
             System.out.println("Матрица не является нижней треугольной");
         }
     }
